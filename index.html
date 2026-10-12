@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun Valley · Ketchum, Idaho · Jan 30 to Feb 6, 2027</title>
+<meta name="description" content="One week in Sun Valley with Clint, Mike, Cubby, and Boris. One helicopter day on top. Jan 30 to Feb 6, 2027, Ketchum, Idaho.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 26 L13 10 L18 19 L21 14 L28 26 Z' fill='%23111417'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="wordmark" href="#top">SV<span class="accent">·</span>27</a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#heli">Heli</a>
+    <a href="#baldy">Baldy</a>
+    <a href="#town">Ketchum</a>
+    <a href="#week">The Week</a>
+    <a href="#getting-there">Getting There</a>
+    <a href="#house">The House</a>
+  </nav>
+  <div class="nav-meta">Jan 30 to Feb 6, 2027</div>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="assets/hero.webp" alt="A helicopter over endless snowy ridges at dawn" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">Ketchum, Idaho · 43.68° N, 114.36° W</p>
+    <h1 class="hero-title reveal">SUN<br>VALLEY</h1>
+    <p class="hero-sub reveal"><em>Idaho, baby.</em></p>
+    <p class="hero-line reveal">A full week in Ketchum for Clint, Mike, Cubby, and Boris.<br>One helicopter day on top.</p>
+  </div>
+  <div class="hero-meta reveal">
+    <div class="hero-meta-item"><span class="hm-label">Heli day</span><span class="hm-value">Wed Feb 3</span></div>
+    <div class="hero-meta-item"><span class="hm-label">Base</span><span class="hm-value">Ketchum, Idaho</span></div>
+    <div class="hero-meta-item"><span class="hm-label">Crew</span><span class="hm-value">Four, full A-Star</span></div>
+    <div class="hero-meta-item"><span class="hm-label">Countdown</span><span class="hm-value" id="countdown">···</span></div>
+  </div>
+</section>
+
+<section class="intro wrap">
+  <p class="statement reveal">Not Chamonix. Not France.<br>Not Italy. <em>Idaho.</em></p>
+  <div class="intro-grid">
+    <p class="lede reveal">Last year's trip got washed out by weather, so this is the redo, done right. A full week in Sun Valley, a helicopter day on top, and a house two miles from everything. And yes, the wives will be super jealous.</p>
+    <ul class="crew reveal">
+      <li><span class="crew-name">Clint</span><span class="crew-note">Boards</span></li>
+      <li><span class="crew-name">Mike</span><span class="crew-note">Boards</span></li>
+      <li><span class="crew-name">Cubby</span><span class="crew-note">Boards · drives in</span></li>
+      <li><span class="crew-name">Boris</span><span class="crew-note">Skis · the odd one out</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section wrap" id="heli">
+  <div class="section-head reveal">
+    <span class="section-index">01</span>
+    <span class="section-label">The headline act</span>
+  </div>
+  <h2 class="section-title reveal">One helicopter.<br>750,000 acres.</h2>
+  <p class="body-copy reveal">Sun Valley Heli Ski holds exclusive access to about 750,000 acres, the largest heli permit area in the lower 48. Just the four of us on a big empty map. Guides pick terrain for four, not for a ski movie. Beacon and airbag pack are provided.</p>
+
+  <div class="stats reveal">
+    <div class="stat"><span class="stat-num">750<em>k</em></span><span class="stat-label">Acres of heli terrain, the largest permit in the lower 48</span></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Runs in a typical day, stacked back to back</span></div>
+    <div class="stat"><span class="stat-num">10–15<em>k</em></span><span class="stat-label">Vertical feet across the day, in feet</span></div>
+    <div class="stat"><span class="stat-num">4:1</span><span class="stat-label">Guests to guide. We fill the A-Star, four single seats</span></div>
+  </div>
+
+  <div class="locked reveal">
+    <div class="locked-left">
+      <span class="locked-tag">Locked in</span>
+      <p class="locked-main">Wednesday, Feb 3, 2027 · 8 AM to 4 PM</p>
+      <p class="locked-sub">Four single seats, the full A-Star for Clint, Mike, Cubby, and Boris. The whole ship is ours.</p>
+    </div>
+    <div class="locked-right">
+      <span class="locked-tag muted">Weather plan, handled</span>
+      <p class="locked-sub">If weather cancels the heli, it is a 100% credit good for three years or a 50% refund, with Sun Valley Resort as the backup day.</p>
+    </div>
+  </div>
+
+  <div class="drop reveal">
+    <div class="drop-head">
+      <span class="section-label">Feel the drop</span>
+      <span class="drop-value"><span id="dropFt">2,250</span> ft per run</span>
+    </div>
+    <input type="range" id="dropRange" min="1000" max="3500" step="50" value="2250" aria-label="Vertical feet per heli run">
+    <div class="drop-scale"><span>1,000 · mellow cruiser</span><span>3,500 · leg burner</span></div>
+    <p class="drop-note" id="dropNote">That is a proper Baldy top-to-bottom, but in untouched backcountry. Six at this size is roughly 13,500 feet on the day.</p>
+  </div>
+</section>
+
+<section class="section wrap" id="baldy">
+  <div class="section-head reveal">
+    <span class="section-index">02</span>
+    <span class="section-label">The rest of the week</span>
+  </div>
+  <h2 class="section-title reveal">Baldy carries<br>everything else.</h2>
+  <div class="split">
+    <div class="split-copy">
+      <p class="body-copy reveal">Bald Mountain, locals just say Baldy, is a serious resort mountain right at the edge of Ketchum: consistent pitch, fall-line skiing, and famously uncrowded. Dollar Mountain next door is the gentle hill where the world's first chairlift ran in 1936.</p>
+      <div class="stats stats-2col reveal">
+        <div class="stat"><span class="stat-num">3,400</span><span class="stat-label">Feet of vertical, top to bottom, no flat runouts</span></div>
+        <div class="stat"><span class="stat-num">2,500<em>+</em></span><span class="stat-label">Acres across Baldy and Dollar</span></div>
+        <div class="stat"><span class="stat-num">120<em>+</em></span><span class="stat-label">Runs with that famously consistent pitch</span></div>
+        <div class="stat"><span class="stat-num">9,150</span><span class="stat-label">Summit elevation, in feet</span></div>
+      </div>
+    </div>
+    <figure class="split-figure reveal">
+      <img src="assets/baldy.webp" alt="A lone skier on a perfectly groomed fall-line run" loading="lazy">
+      <figcaption>First tracks, midweek. This is the warm-up act.</figcaption>
+    </figure>
+  </div>
+
+  <div class="elev reveal" aria-hidden="true">
+    <svg viewBox="0 0 1000 190" preserveAspectRatio="none" class="elev-svg">
+      <line x1="0" y1="168" x2="1000" y2="168" class="elev-base"/>
+      <polyline points="0,168 620,168 1000,30" class="elev-line"/>
+      <circle cx="620" cy="168" r="4" class="elev-dot"/>
+      <circle cx="1000" cy="30" r="4" class="elev-dot"/>
+    </svg>
+    <div class="elev-labels">
+      <div class="elev-label el-left"><strong>Ketchum · 5,853 ft</strong><span>You sleep low</span></div>
+      <div class="elev-label el-mid"><strong>River Run base</strong><span>Morning meet point</span></div>
+      <div class="elev-label el-right"><strong>Baldy summit · 9,150 ft</strong><span>Ski high, recover better</span></div>
+    </div>
+  </div>
+
+  <div class="rows reveal">
+    <div class="row"><span class="row-name">The mountain</span><p class="row-note">River Run at the base is the morning meet point. Challenger and the gondola get you up fast, and the pitch basically never flattens out.</p></div>
+    <div class="row"><span class="row-name">The warm-up</span><p class="row-note">Dollar Mountain for first-morning legs, mellow cruisers, and zero stress before the heli day. Terrain parks too, if anyone is feeling young.</p></div>
+    <div class="row"><span class="row-name">The lines</span><p class="row-note">Sun Valley is famously uncrowded for a mountain this size. Expect short to no lift lines, especially midweek, which is exactly when we will be lapping it.</p></div>
+  </div>
+</section>
+
+<section class="band">
+  <img src="assets/ketchum.webp" alt="Downtown Ketchum at dusk with Baldy behind it" loading="lazy">
+  <p class="band-caption wrap">Downtown Ketchum at dusk, Baldy in the background. We are staying steps from this.</p>
+</section>
+
+<section class="section wrap" id="town">
+  <div class="section-head reveal">
+    <span class="section-index">03</span>
+    <span class="section-label">The town</span>
+  </div>
+  <h2 class="section-title reveal">A real town,<br>not a base village.</h2>
+  <p class="body-copy reveal">Walkable downtown, no chain sprawl. Hemingway finished <em>For Whom the Bell Tolls</em> here, and he is buried here. Ketchum was not a backdrop for him. It was home, and the town still feels literary, not manufactured.</p>
+  <div class="rows reveal">
+    <div class="row"><span class="row-name">Pioneer Saloon</span><span class="row-tag">Dinner · first night</span><p class="row-note">Steak and prime rib, old Ketchum energy. The classic first-night move after everyone lands. Go early, it fills.</p></div>
+    <div class="row"><span class="row-name">Sawtooth Club</span><span class="row-tag">Drinks · Hemingway haunt</span><p class="row-note">Low light, wood, proper cocktails at one of Hemingway's old haunts. The opposite of a base-village bar.</p></div>
+    <div class="row"><span class="row-name">Michel's Christiania</span><span class="row-tag">French · night after the heli</span><p class="row-note">French classics, still open, still his favorite. White tablecloth without the fuss. Book it for the night after heli day.</p></div>
+    <div class="row"><span class="row-name">The Kneadery</span><span class="row-tag">Breakfast · big</span><p class="row-note">Big breakfasts in Ketchum. Fuel before Baldy. You will need it after a 3,400-foot vertical day.</p></div>
+    <div class="row"><span class="row-name">The Casino</span><span class="row-tag">Dive · local legend</span><p class="row-note">Cheap, loud, perfect. This is where the night ends when nobody wants it to end. Ketchum does dive bars right.</p></div>
+    <div class="row"><span class="row-name">Hemingway in Ketchum</span><span class="row-tag">History</span><p class="row-note">He lived here, finished a novel here, and is buried in Ketchum. That is why the town still feels like a place, not a product.</p></div>
+  </div>
+</section>
+
+<section class="section wrap" id="week">
+  <div class="section-head reveal">
+    <span class="section-index">04</span>
+    <span class="section-label">The trip, locked</span>
+  </div>
+  <h2 class="section-title reveal">Sat Jan 30 to Sat Feb 6.<br>Back before it matters.</h2>
+  <p class="body-copy reveal">Home well before Valentine's Day and the Super Bowl on Feb 14. Nobody misses anything. That is the whole design.</p>
+  <div class="rows reveal">
+    <div class="row row-week"><span class="row-date">Sat Jan 30</span><span class="row-name">Arrive in Ketchum</span><span class="row-tag tag-travel">Travel day</span><p class="row-note">Fly into SUN in Hailey, or drive in from Park City. Settle into the Knob Hill house. Pioneer Saloon that night.</p></div>
+    <div class="row row-week"><span class="row-date">Jan 31 to Feb 2</span><span class="row-name">Baldy warm-up</span><span class="row-tag">Resort days</span><p class="row-note">Bald Mountain laps, Dollar Mountain, Ketchum dinners. Legs ready for the heli.</p></div>
+    <div class="row row-week row-heli"><span class="row-date">Wed Feb 3</span><span class="row-name">Heli day</span><span class="row-tag tag-heli">Heli day</span><p class="row-note">Sun Valley Heli Ski, 8 AM to 4 PM. Clint, Mike, Cubby, and Boris in the full A-Star. The headline act.</p></div>
+    <div class="row row-week"><span class="row-date">Feb 4 to 5</span><span class="row-name">Victory laps</span><span class="row-tag">Buffer</span><p class="row-note">More Baldy, the hot tub, Michel's Christiania, The Casino. No rush.</p></div>
+    <div class="row row-week"><span class="row-date">Sat Feb 6</span><span class="row-name">Head home</span><span class="row-tag">Home</span><p class="row-note">Out of Ketchum, home a full week before Valentine's Day and the Super Bowl.</p></div>
+  </div>
+</section>
+
+<section class="section wrap" id="getting-there">
+  <div class="section-head reveal">
+    <span class="section-index">05</span>
+    <span class="section-label">Getting there</span>
+  </div>
+  <h2 class="section-title reveal">No direct flights.<br>One easy connection.</h2>
+  <p class="body-copy reveal">Friedman Memorial Airport (SUN) in Hailey is about 25 minutes from Ketchum. SUN flies nonstop to only eight cities: Chicago, Denver, Los Angeles, Phoenix, San Diego, San Francisco, Seattle, and Salt Lake City. Three of us fly in. One of us drives. Both ways work.</p>
+  <div class="routes reveal">
+    <article class="route">
+      <span class="route-code">BWI → SUN</span>
+      <span class="route-who">Baltimore · Clint and Mike · one stop</span>
+      <p>Via Denver, Salt Lake City, or Chicago O'Hare. No nonstop from BWI, and that is fine. Book together if you can: same connection means one shuttle to the house.</p>
+    </article>
+    <article class="route">
+      <span class="route-code">EWR → SUN</span>
+      <span class="route-who">Newark · Boris · one stop</span>
+      <p>United via Denver or Delta via Salt Lake City are the natural routings. Denver is the easiest backup if weather gets weird: more frequencies, more options.</p>
+    </article>
+    <article class="route">
+      <span class="route-code">Park City → Ketchum</span>
+      <span class="route-who">Cubby drives · about 324 miles</span>
+      <p>Roughly five hours, straight north. Utah sits directly south of Idaho, so this is driving into the trip, not away from it. No connection to miss, no shuttle to catch. He rolls into downtown while the flyers are still de-icing.</p>
+    </article>
+  </div>
+  <p class="fineprint reveal">Once you land at SUN, Hailey to Ketchum is about 25 minutes. The free Mountain Rides bus covers Ketchum, Sun Valley, and both mountains all week, so nobody needs to be the hero driver. And because Cubby drives himself, the rest of us do not need a rental car.</p>
+
+  <div class="miles reveal">
+    <p class="miles-title">Two miles. <em>That is the whole week.</em></p>
+    <div class="rows">
+      <div class="row"><span class="row-name">The house, Knob Hill</span><span class="row-tag">Start here</span><p class="row-note">4BR / 3.5BA on Knob Hill, just north of downtown. <a href="https://www.google.com/maps/search/?api=1&query=Knob+Hill+Park+N+Main+St+Ketchum+ID+83340" target="_blank" rel="noopener">Open in Maps</a></p></div>
+      <div class="row"><span class="row-name">Downtown Ketchum</span><span class="row-tag">Steps</span><p class="row-note">Pioneer Saloon, Sawtooth Club, The Casino, Michel's Christiania. The nightly loop, on foot. <a href="https://www.google.com/maps/search/?api=1&query=Main+Street+Ketchum+ID+83340" target="_blank" rel="noopener">Open in Maps</a></p></div>
+      <div class="row"><span class="row-name">Baldy, River Run base</span><span class="row-tag">~4 min</span><p class="row-note">The main base and morning meet point for the non-heli days. 3,400 feet of vertical above it. <a href="https://www.google.com/maps/search/?api=1&query=River+Run+Day+Lodge+1+Sun+Valley+Rd+Sun+Valley+ID" target="_blank" rel="noopener">Open in Maps</a></p></div>
+      <div class="row"><span class="row-name">Sun Valley Heli Ski base</span><span class="row-tag">~5 min</span><p class="row-note">Trail Creek Road by Sun Valley Resort. Wed Feb 3, 8 AM, full A-Star for four. <a href="https://www.google.com/maps/search/?api=1&query=200+Trail+Creek+Rd+Sun+Valley+ID+83353" target="_blank" rel="noopener">Open in Maps</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="house">
+  <div class="section-head reveal">
+    <span class="section-index">06</span>
+    <span class="section-label">The house</span>
+  </div>
+  <h2 class="section-title reveal">Downtown Ketchum.<br>Steps from everything.</h2>
+  <p class="body-copy reveal">The Downtown Ketchum (Knob Hill) 4-bedroom home: tall ceilings, a stone fireplace, Bald Mountain through the glass, and a private hot tub on the lower patio, right off the game room.</p>
+  <div class="specs reveal">
+    <div class="spec"><span class="spec-value">4BR / 3.5BA</span><span class="spec-label">Nobody is on a couch</span></div>
+    <div class="spec"><span class="spec-value">4.89</span><span class="spec-label">Listing rating</span></div>
+    <div class="spec"><span class="spec-value">Hot tub</span><span class="spec-label">Private, post-heli recovery</span></div>
+    <div class="spec"><span class="spec-value">Game room</span><span class="spec-label">Foosball, giant TV, Sonos. Loser makes breakfast</span></div>
+    <div class="spec"><span class="spec-value">Shuttle</span><span class="spec-label">To the lifts, so Cubby is not the chauffeur</span></div>
+    <div class="spec"><span class="spec-value">Steps</span><span class="spec-label">To downtown, per the listing itself</span></div>
+  </div>
+</section>
+
+<section class="closing wrap">
+  <p class="closing-big reveal"><em>Idaho, baby.</em></p>
+  <p class="closing-copy reveal">Not Chamonix. Not France. Not Italy. Idaho. The top heli outfit in the lower 48, a real mountain town, and a house two miles from everything. It is a better story.</p>
+  <div class="owed reveal">
+    <span class="locked-tag">Still owed</span>
+    <p>Guest Portal paperwork from Clint, Mike, Cubby, and Boris. Five minutes each. That is the only annoying part.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>Sun Valley · Ketchum, Idaho</span>
+    <span>Clint · Mike · Cubby · Boris</span>
+    <span>Jan 30 to Feb 6, 2027</span>
+  </div>
+  <p class="sources wrap">Sources: sunvalleyheliski.com, sunvalley.com, Sun Valley Resort and Ketchum guides. Photography generated for this brief. Map pins use neighborhood anchors (Knob Hill; 200 Trail Creek Rd; River Run Day Lodge; downtown Ketchum). Elevation graphic is stylized, not the official trail map.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
