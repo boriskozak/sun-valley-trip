@@ -1,1 +1,11 @@
 review/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor cruft
+*.swp
+*~
+.vscode/
+.idea/
