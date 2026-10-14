@@ -14,7 +14,9 @@
   var note = document.getElementById('dropNote');
   function fmt(n) { return n.toLocaleString('en-US'); }
   function updateDrop() {
+    if (!range || !ft || !note) { return; }
     var v = parseInt(range.value, 10);
+    if (isNaN(v)) { return; }
     ft.textContent = fmt(v);
     var total = fmt(v * 6);
     note.textContent = v <= 1400
@@ -40,7 +42,9 @@
 
   // Nav gains a paper background after the hero top.
   var nav = document.querySelector('.nav');
-  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 40); }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  if (nav) {
+    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 40); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 })();
