@@ -7,6 +7,8 @@ Heli Ski day on Wed Feb 3.
 The original brief lives on Muse as a hosted web page. This repo is the
 redesign, built so the two can be compared side by side.
 
+Live site: https://boriskozak.github.io/sun-valley-trip/
+
 ## Run it
 
 No build step. Serve the folder over HTTP:
