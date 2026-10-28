@@ -43,8 +43,16 @@
   // Nav gains a paper background after the hero top.
   var nav = document.querySelector('.nav');
   if (nav) {
-    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 40); }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) { return; }
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+        ticking = false;
+      });
+    }
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    nav.classList.toggle('scrolled', window.scrollY > 40);
   }
 })();
