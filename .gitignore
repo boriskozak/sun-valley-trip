@@ -1,4 +1,8 @@
 review/
+node_modules/
+
+# Logs
+*.log
 
 # OS cruft
 .DS_Store
