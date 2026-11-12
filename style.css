@@ -28,7 +28,7 @@ em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:40
 .skip-link:focus{top:12px}
 a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 
 /* ---------- nav ---------- */
