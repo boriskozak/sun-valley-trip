@@ -4,8 +4,9 @@
   var el = document.getElementById('countdown');
   if (el) {
     var target = new Date('2027-01-30T00:00:00-07:00');
+    var tripEnd = new Date('2027-02-07T00:00:00-07:00');
     var days = Math.ceil((target - new Date()) / 86400000);
-    el.textContent = days > 0 ? days + (days === 1 ? ' day out' : ' days out') : (days === 0 ? 'Today' : 'We are there');
+    el.textContent = new Date() >= tripEnd ? 'That is a wrap' : (days > 0 ? days + (days === 1 ? ' day out' : ' days out') : (days === 0 ? 'Today' : 'We are there'));
   }
 
   // Feel the drop: per-run vertical drives the day total at six runs.
