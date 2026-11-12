@@ -29,6 +29,7 @@ Then open http://localhost:8000.
 - `app.js`: countdown to Jan 30, the "feel the drop" vertical slider,
   scroll reveals, nav state
 - `assets/`: photography generated for this brief (hero heli, Baldy, Ketchum)
+- `LICENSE`: MIT license
 
 ## Design notes
 
